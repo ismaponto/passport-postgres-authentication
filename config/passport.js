@@ -1,5 +1,5 @@
 const bcrypt= require('bcryptjs')
-const uuidv4 = require('uuid/v4')
+const { v4: uuidv4 } = require('uuid');
 const pool = require('./database.js')
 
 var LocalStrategy = require('passport-local').Strategy
